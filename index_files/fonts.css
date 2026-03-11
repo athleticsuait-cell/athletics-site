@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'co_text_corpregular';
+  src: url('fonts/cotext_corp_rg-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/cotext_corp_rg-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cotext_corp_rg-webfont.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cotext_corp_rg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
