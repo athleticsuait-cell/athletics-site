@@ -4,94 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фінансова звітність - АТЛЕТІКС</title>
+    <link rel="stylesheet" href="./index_files/fonts.css">
     <style>
-        /* Використовуємо ті ж шрифти, що й на головній */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.5; 
-            color: #4a4a4a; 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 40px 20px;
-            background-color: #ffffff;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        /* Синій колір фону банера як у логотипу */
+        body {
+            /* Використовуємо той самий шрифт, що і на головній */
+            font-family: "co_text_corpregular", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 40px 30px;
+        }
         .header-banner { 
-            background-color: #a0c4ff; 
+            background-color: #004899; /* Точний колір вашого лого-блоку */
             color: white; 
-            padding: 40px 20px; 
+            padding: 30px; 
             text-align: center; 
-            border-radius: 4px; 
-            margin-bottom: 40px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 6px; 
+            margin-bottom: 30px;
         }
-
         h1 { 
             margin: 0; 
-            font-size: 28px; 
-            font-weight: 700; 
-            letter-spacing: 0.5px;
+            font-size: 24px; 
+            font-weight: bold;
             text-transform: uppercase;
         }
-
-        /* Стиль посилань на звіти */
         .report-link { 
             display: flex;
             align-items: center;
-            padding: 18px 10px; 
+            padding: 20px 10px; 
             font-size: 18px; 
             color: #0056b3; 
             text-decoration: none; 
-            border-bottom: 1px solid #e0e0e0; 
-            transition: all 0.2s ease;
+            border-bottom: 1px solid #eee; 
+            transition: background 0.2s;
         }
-
         .report-link:before {
             content: "📄";
-            margin-right: 12px;
+            margin-right: 15px;
             font-size: 20px;
         }
-
         .report-link:hover { 
             background-color: #fcfcfc; 
             color: #003d80; 
-            padding-left: 15px;
         }
-
-        /* Кнопка повернення */
         .back-link { 
             display: inline-block; 
-            margin-top: 40px; 
-            color: #888; 
+            margin-top: 30px; 
+            color: #666; 
             text-decoration: none; 
-            font-size: 15px; 
+            font-size: 14px;
             border-bottom: 1px dashed #ccc;
         }
-
         .back-link:hover {
             color: #333;
             border-bottom-style: solid;
-        }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 20px; }
-            body { padding: 20px 15px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="header-banner">
-        <h1>ФІНАНСОВА ЗВІТНІСТЬ ТОВ «АТЛЕТІКС»</h1>
+    <div class="container">
+        <div class="header-banner">
+            <h1>Фінансова звітність ТОВ «АТЛЕТІКС»</h1>
+        </div>
+
+        <a href="report_2022.pdf" target="_blank" class="report-link">Звітність за 2022 рік</a>
+        <a href="report_2023.pdf" target="_blank" class="report-link">Звітність за 2023 рік</a>
+        <a href="report_2024.pdf" target="_blank" class="report-link">Звітність за 2024 рік</a>
+        <a href="report_2025.pdf" target="_blank" class="report-link">Звітність за 2025 рік</a>
+
+        <a href="index.html" class="back-link">← Повернутися на головну</a>
     </div>
-
-    <a href="report_2022.pdf" target="_blank" class="report-link">Фінансова звітність за 2022 рік</a>
-    <a href="report_2023.pdf" target="_blank" class="report-link">Фінансова звітність за 2023 рік</a>
-    <a href="report_2024.pdf" target="_blank" class="report-link">Фінансова звітність за 2024 рік</a>
-    <a href="report_2025.pdf" target="_blank" class="report-link">Фінансова звітність за 2025 рік</a>
-
-    <a href="index.html" class="back-link">← Повернутися на головну</a>
 
 </body>
 </html>
